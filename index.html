@@ -16,7 +16,6 @@
             justify-content: center;
         }
         .button {
-            background-color: #4CAF50;
             border: none;
             color: white;
             padding: 20px 40px;
@@ -28,7 +27,21 @@
             width: 250px;
         }
         .button:hover {
-            background-color: #45a049;
+            opacity: 0.9;
+        }
+        /* Denner buttons */
+        .denner {
+            background-color: #e74c3c;
+        }
+        .denner:hover {
+            background-color: #c0392b;
+        }
+        /* Coop buttons */
+        .coop {
+            background-color: #f39c12;
+        }
+        .coop:hover {
+            background-color: #e67e22;
         }
         #message {
             font-size: 18px;
@@ -41,23 +54,26 @@
 
     <h1>Whiskey Preise bei Coop und Denner</h1>
     <div class="container">
-        <button class="button" onclick="window.open('https://www.denner.ch/de/shop/spirituosen/whisky/jhonnie-walker-black-label-0-7l/p/3040130?context=search&trackingtoken=nulltreffer%7Carea1%7CB%7Cdenner+empfehlungslogiken%7Cnulltreffer_U2P%7CU2Ps', '_blank')">
-            Jhonnie Walker Black Label Denner
+        <!-- Denner Buttons -->
+        <button class="button denner" onclick="window.open('https://www.denner.ch/de/shop/spirituosen/whisky/chivas-regal-blended-scotch-whisky-0-7l/p/3050505?context=search&trackingtoken=nulltreffer%7Carea1%7CB%7Cdenner+empfehlungslogiken%7Cnulltreffer_U2P%7CU2Ps', '_blank')">
+            Chivas Regal Blended Scotch Whisky Denner
         </button>
-        <button class="button" onclick="window.open('https://www.denner.ch/de/shop/spirituosen/whisky/ballantines-12-jahre-0-7l/p/3011472?context=search&trackingtoken=nulltreffer%7Carea1%7CB%7Cdenner+empfehlungslogiken%7Cnulltreffer_U2P%7CU2Ps', '_blank')">
-            Ballantines Denner
+        <button class="button denner" onclick="window.open('https://www.denner.ch/de/shop/spirituosen/whisky/ballantines-finest-blended-scotch-whisky-0-7l/p/3011489?context=search&trackingtoken=nulltreffer%7Carea1%7CB%7Cdenner+empfehlungslogiken%7Cnulltreffer_U2P%7CU2Ps', '_blank')">
+            Ballantine’s Finest Blended Scotch Whisky Denner
         </button>
-        <button class="button" onclick="window.open('https://www.denner.ch/de/shop/spirituosen/whisky/chivas-regal-12-jahre-0-7l/p/3010590?context=search&trackingtoken=nulltreffer%7Carea1%7CB%7Cdenner+empfehlungslogiken%7Cnulltreffer_U2P%7CU2Ps', '_blank')">
-            Chivas Regal Denner
+        <button class="button denner" onclick="window.open('https://www.denner.ch/de/shop/spirituosen/whisky/johnnie-walker-black-label-blended-scotch-whiskey-0-7l/p/3040130?context=search&trackingtoken=nulltreffer%7Carea1%7CB%7Cdenner+empfehlungslogiken%7Cnulltreffer_U2P%7CU2Ps', '_blank')">
+            Johnnie Walker Black Label Blended Scotch Whiskey Denner
         </button>
-        <button class="button" onclick="window.open('https://www.coop.ch/de/kiosk/spirituosen/alle-spirituosen/whisky/aus-schottland/blended-scotch/whisky-jhonnie-walker-black-label-blended-scotch-0-7l/p/3050401?context=search&trackingtoken=nulltreffer%7Carea1%7CB%7Ccoop+spezifische+Empfehlungslogiken%7Cnulltreffer_U2P%7CU2Ps', '_blank')">
-            Jhonnie Walker Black Label Coop
+
+        <!-- Coop Buttons -->
+        <button class="button coop" onclick="window.open('https://www.coop.ch/de/kiosk/spirituosen/alle-spirituosen/whisky/aus-schottland/blended-scotch/whisky-chivas-regal-12-years-scotch/p/3051132?context=search&trackingtoken=nulltreffer%7Carea1%7CB%7Ccoop+spezifische+Empfehlungslogiken%7Cnulltreffer_U2P%7CU2Ps', '_blank')">
+            Whisky Chivas Regal 12 Years Scotch Coop
         </button>
-        <button class="button" onclick="window.open('https://www.coop.ch/de/kiosk/spirituosen/alle-spirituosen/whisky/aus-schottland/blended-scotch/whisky-ballantines-12-years-scotch/p/3050961?context=search&trackingtoken=nulltreffer%7Carea1%7CB%7Ccoop+spezifische+Empfehlungslogiken%7Cnulltreffer_U2P%7CU2Ps', '_blank')">
-            Ballantines Coop
+        <button class="button coop" onclick="window.open('https://www.coop.ch/de/kiosk/spirituosen/alle-spirituosen/whisky/aus-schottland/blended-scotch/whisky-johnnie-walker-black-label-old-scotch-whisky-12-years/p/3050401?context=search&trackingtoken=nulltreffer%7Carea1%7CB%7Ccoop+spezifische+Empfehlungslogiken%7Cnulltreffer_U2P%7CU2Ps', '_blank')">
+            Johnnie Walker Black Label Old Scotch Whisky, 12 Years Coop
         </button>
-        <button class="button" onclick="window.open('https://www.coop.ch/de/kiosk/spirituosen/alle-spirituosen/whisky/aus-schottland/blended-scotch/whisky-chivas-regal-12-years-scotch/p/3051132?context=search&trackingtoken=nulltreffer%7Carea1%7CB%7Ccoop+spezifische+Empfehlungslogiken%7Cnulltreffer_U2P%7CU2Ps', '_blank')">
-            Chivas Regal Coop
+        <button class="button coop" onclick="window.open('https://www.coop.ch/de/kiosk/spirituosen/alle-spirituosen/whisky/aus-schottland/blended-scotch/whisky-ballantines-scotch/p/3050961?context=search&trackingtoken=nulltreffer%7Carea1%7CB%7Ccoop+spezifische+Empfehlungslogiken%7Cnulltreffer_U2P%7CU2Ps', '_blank')">
+            Whisky Ballantine's Scotch Coop
         </button>
     </div>
 
