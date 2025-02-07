@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whiskey Preise</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 20px 40px;
+            text-align: center;
+            font-size: 18px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 8px;
+            width: 250px;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        #message {
+            font-size: 18px;
+            color: red;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Whiskey Preise bei Coop und Denner</h1>
+    <div class="container">
+        <button class="button" onclick="window.open('https://www.denner.ch/de/shop/spirituosen/whisky/jhonnie-walker-black-label-0-7l/p/3040130?context=search&trackingtoken=nulltreffer%7Carea1%7CB%7Cdenner+empfehlungslogiken%7Cnulltreffer_U2P%7CU2Ps', '_blank')">
+            Jhonnie Walker Black Label Denner
+        </button>
+        <button class="button" onclick="window.open('https://www.denner.ch/de/shop/spirituosen/whisky/ballantines-12-jahre-0-7l/p/3011472?context=search&trackingtoken=nulltreffer%7Carea1%7CB%7Cdenner+empfehlungslogiken%7Cnulltreffer_U2P%7CU2Ps', '_blank')">
+            Ballantines Denner
+        </button>
+        <button class="button" onclick="window.open('https://www.denner.ch/de/shop/spirituosen/whisky/chivas-regal-12-jahre-0-7l/p/3010590?context=search&trackingtoken=nulltreffer%7Carea1%7CB%7Cdenner+empfehlungslogiken%7Cnulltreffer_U2P%7CU2Ps', '_blank')">
+            Chivas Regal Denner
+        </button>
+        <button class="button" onclick="window.open('https://www.coop.ch/de/kiosk/spirituosen/alle-spirituosen/whisky/aus-schottland/blended-scotch/whisky-jhonnie-walker-black-label-blended-scotch-0-7l/p/3050401?context=search&trackingtoken=nulltreffer%7Carea1%7CB%7Ccoop+spezifische+Empfehlungslogiken%7Cnulltreffer_U2P%7CU2Ps', '_blank')">
+            Jhonnie Walker Black Label Coop
+        </button>
+        <button class="button" onclick="window.open('https://www.coop.ch/de/kiosk/spirituosen/alle-spirituosen/whisky/aus-schottland/blended-scotch/whisky-ballantines-12-years-scotch/p/3050961?context=search&trackingtoken=nulltreffer%7Carea1%7CB%7Ccoop+spezifische+Empfehlungslogiken%7Cnulltreffer_U2P%7CU2Ps', '_blank')">
+            Ballantines Coop
+        </button>
+        <button class="button" onclick="window.open('https://www.coop.ch/de/kiosk/spirituosen/alle-spirituosen/whisky/aus-schottland/blended-scotch/whisky-chivas-regal-12-years-scotch/p/3051132?context=search&trackingtoken=nulltreffer%7Carea1%7CB%7Ccoop+spezifische+Empfehlungslogiken%7Cnulltreffer_U2P%7CU2Ps', '_blank')">
+            Chivas Regal Coop
+        </button>
+    </div>
+
+    <div id="message">
+        <p>Leider wurde die Seite nicht gefunden.</p>
+    </div>
+
+    <script>
+        // Funktion um sicherzustellen, dass die Seite existiert
+        function checkIfPageExists(url) {
+            fetch(url, { method: 'HEAD' })
+                .then(response => {
+                    if (response.ok) {
+                        window.open(url, '_blank');
+                    } else {
+                        document.getElementById('message').style.display = 'block';
+                    }
+                })
+                .catch(() => {
+                    document.getElementById('message').style.display = 'block';
+                });
+        }
+    </script>
+</body>
+</html>
